@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Dashboard</title>
+        <!-- tailwind -->
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/tailwindcss/dist/tailwind.min.css"
+        />
+        <!-- font awesome -->
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+            integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+        <!-- custom css -->
+        <link rel="stylesheet" href="css/style.css" />
+    </head>
+    <body>
+        <!-- create a user dashboard with a sidebar and some main content -->
+        <div class="flex h-screen bg-gray-200">
+            <!-- sidebar -->
+            <div class="w-1/5 bg-gray-800 text-white">
+                <div class="p-6">
+                    <!-- make a user card -->
+                    <div class="flex flex-col items-center">
+                        <img
+                            src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png"
+                            alt="user"
+                            class="w-20 h-20 rounded-full object-cover"
+                        />
+                        <h2 class="text-xl font-bold mt-2">Loc Son</h2>
+                        <span class="text-sm text-gray-400">Admin</span>
+                    </div>
+                </div>
+                <div class="flex flex-col space-y-3 py-5 px-6">
+                    <a
+                        href="#"
+                        class="flex items-center space-x-2 px-4 py-2 rounded-md bg-gray-700 text-gray-200"
+                    >
+                        <span class="text-lg"
+                            ><i class="fas fa-tachometer-alt"></i
+                        ></span>
+                        <span>Dashboard</span>
+                    </a>
+                    <a
+                        href="#"
+                        class="flex items-center space-x-2 px-4 py-2 rounded-md text-gray-400 hover:bg-gray-700 hover:text-gray-200"
+                    >
+                        <span class="text-lg"
+                            ><i class="fas fa-shopping-cart"></i
+                        ></span>
+                        <span>Orders</span>
+                    </a>
+                    <a
+                        href="#"
+                        class="flex items-center space-x-2 px-4 py-2 rounded-md text-gray-400 hover:bg-gray-700 hover:text-gray-200"
+                    >
+                        <span class="text-lg"
+                            ><i class="fas fa-users"></i
+                        ></span>
+                        <span>Customers</span>
+                    </a>
+                    <a
+                        href="#"
+                        class="flex items-center space-x-2 px-4 py-2 rounded-md text-gray-400 hover:bg-gray-700 hover:text-gray-200"
+                    >
+                        <span class="text-lg"
+                            ><i class="fas fa-chart-bar"></i
+                        ></span>
+                        <span>Reports</span>
+                    </a>
+                    <a
+                        href="#"
+                        class="flex items-center space-x-2 px-4 py-2 rounded-md text-gray-400 hover:bg-gray-700 hover:text-gray-200"
+                    >
+                        <span class="text-lg"><i class="fas fa-cogs"></i></span>
+                        <span>Settings</span>
+                    </a>
+                </div>
+            </div>
+            <!-- create a performance card-->
+            <div class="w-4/5 p-6">
+                <h1 class="text-3xl font-bold">Dashboard</h1>
+                <!-- create a performance card -->
+                <div class="flex flex-wrap mt-6">
+                    <div class="w-full md:w-1/2 xl:w-1/3 p-6">
+                        <div
+                            class="bg-white border-transparent rounded-lg shadow-xl"
+                        >
+                            <div
+                                class="bg-blue-500 rounded-tl-lg rounded-tr-lg p-4"
+                            >
+                                <div class="flex flex-row items-center">
+                                    <div class="flex-shrink pr-4">
+                                        <div
+                                            class="rounded-full p-5 bg-blue-600"
+                                        >
+                                            <i
+                                                class="fas fa-wallet fa-2x fa-inverse"
+                                            ></i>
+                                        </div>
+                                    </div>
+                                    <div
+                                        class="flex-1 text-right md:text-center"
+                                    >
+                                        <h5
+                                            class="font-bold uppercase text-gray-200"
+                                        >
+                                            Total Revenue
+                                        </h5>
+                                        <h3
+                                            class="font-bold text-3xl text-gray-200"
+                                        >
+                                            $3249
+                                            <span class="text-sm text-gray-200">
+                                                USD
+                                            </span>
+                                        </h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="p-5">
+                                <div class="flex flex-row items-center">
+                                    <div class="flex-1">
+                                        <h5
+                                            class="font-bold uppercase text-gray-500"
+                                        >
+                                            Last Month
+                                        </h5>
+                                        <h3 class="font-bold text-2xl">
+                                            $3249
+                                            <span class="text-sm text-gray-500">
+                                                USD
+                                            </span>
+                                        </h3>
+                                    </div>
+                                    <div class="flex-1">
+                                        <h5
+                                            class="font-bold uppercase text-gray-500"
+                                        >
+                                            Last Year
+                                        </h5>
+                                        <h3 class="font-bold text-2xl">
+                                            $3249
+                                            <span class="text-sm text-gray-500">
+                                                USD
+                                            </span>
+                                        </h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- create a performance card -->
+                    <div class="w-full md:w-1/2 xl:w-1/3 p-6">
+                        <div
+                            class="bg-white border-transparent rounded-lg shadow-xl"
+                        >
+                            <div
+                                class="bg-red-500 rounded-tl-lg rounded-tr-lg p-4"
+                            >
+                                <div class="flex flex-row items-center">
+                                    <div class="flex-shrink pr-4">
+                                        <div
+                                            class="rounded-full p-5 bg-red-600"
+                                        >
+                                            <i
+                                                class="fas fa-users fa-2x fa-inverse"
+                                            ></i>
+                                        </div>
+                                    </div>
+                                    <div
+                                        class="flex-1 text-right md:text-center"
+                                    >
+                                        <h5
+                                            class="font-bold uppercase text-gray-200"
+                                        >
+                                            Total Users
+                                        </h5>
+                                        <h3
+                                            class="font-bold text-3xl text-gray-200"
+                                        >
+                                            249
+                                        </h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="p-5">
+                                <div class="flex flex-row items-center">
+                                    <div class="flex-1">
+                                        <h5
+                                            class="font-bold uppercase text-gray-500"
+                                        >
+                                            Last Month
+                                        </h5>
+                                        <h3 class="font-bold text-2xl">150</h3>
+                                    </div>
+                                    <div class="flex-1">
+                                        <h5
+                                            class="font-bold uppercase text-gray-500"
+                                        >
+                                            Last Year
+                                        </h5>
+                                        <h3 class="font-bold text-2xl">200</h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- create a engagement report -->
+                <div class="flex flex-wrap mt-6">
+                    <div class="w-1/2 p-6">
+                        <div
+                            class="bg-white border-transparent rounded-lg shadow-xl"
+                        >
+                            <div
+                                class="bg-orange-500 rounded-tl-lg rounded-tr-lg p-4"
+                            >
+                                <div class="flex flex-row items-center">
+                                    <div class="flex-shrink pr-4">
+                                        <div
+                                            class="rounded-full p-5 bg-orange-600"
+                                        >
+                                            <i
+                                                class="fas fa-chart-area fa-2x fa-inverse"
+                                            ></i>
+                                        </div>
+                                    </div>
+                                    <div
+                                        class="flex-1 text-right md:text-center"
+                                    >
+                                        <h5
+                                            class="font-bold uppercase text-gray-500"
+                                        >
+                                            Engagement Report
+                                        </h5>
+                                        <h3
+                                            class="font-bold text-xl text-gray-200"
+                                        >
+                                            49%
+                                        </h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="p-5">
+                                <canvas id="chartjs-4" class="chartjs"></canvas>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="w-1/2 p-6">
+                        <div
+                            class="bg-white border-transparent rounded-lg shadow-xl"
+                        >
+                            <div
+                                class="bg-gray-500 rounded-tl-lg rounded-tr-lg p-4"
+                            >
+                                <div class="flex flex-row items-center">
+                                    <div class="flex-shrink pr-4">
+                                        <div
+                                            class="rounded-full p-5 bg-gray-600"
+                                        >
+                                            <i
+                                                class="fas fa-table fa-2x fa-inverse"
+                                            ></i>
+                                        </div>
+                                    </div>
+                                    <div
+                                        class="flex-1 text-right md:text-center"
+                                    >
+                                        <h5
+                                            class="font-bold uppercase text-gray-200"
+                                        >
+                                            Table
+                                        </h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- create table -->
+                        <div class="p-5">
+                            <table class="w-full p-5 text-gray-700">
+                                <thead>
+                                    <tr>
+                                        <th class="text-left text-blue-900">
+                                            Name
+                                        </th>
+                                        <th class="text-left text-blue-900">
+                                            Email
+                                        </th>
+                                        <th class="text-left text-blue-900">
+                                            Phone
+                                        </th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Obi-Wan Kenobi</td>
+                                        <td>Kenobi@email.com</td>
+                                        <td>0129372141</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Greedo</td>
+                                        <td>South@email.com</td>
+                                        <td>0129372141</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Dark</td>
+                                        <td>John@email.com</td>
+                                        <td>0129372141</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- import chartjs -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script>
+        <!-- import custom js -->
+        <script src="js/main.js"></script>
+    </body>
+</html>
